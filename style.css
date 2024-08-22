@@ -21,7 +21,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: italic;
-  }
+}
 
 .container-fluid {
     display: flex;
@@ -31,19 +31,25 @@ body {
     text-align: left;
 }
 
-.center-text{
+.center-text {
     text-align: center;
 }
 
 .contato {
     background-color: #121212;
-    width: 115rem; /* Alterado para 100% para ocupar toda a largura da página */
-    height: 125px;
-    display: flex; /* Adicionado para permitir centralização */
-    justify-content: center; /* Centraliza horizontalmente o conteúdo */
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    text-align: center; /* Centraliza o texto */
-    flex-direction: column; /* Alinha os itens em coluna */
+    width: 115rem;
+    /* Alterado para 100% para ocupar toda a largura da página */
+    height: 160px;
+    display: flex;
+    /* Adicionado para permitir centralização */
+    justify-content: center;
+    /* Centraliza horizontalmente o conteúdo */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo */
+    text-align: center;
+    /* Centraliza o texto */
+    flex-direction: column;
+    /* Alinha os itens em coluna */
 }
 
 
@@ -51,20 +57,66 @@ body {
     color: #eaeaea;
     justify-content: center;
     text-align: center;
-    display: flex;
-    margin-bottom: 2px; /* Reduz a margem inferior para aproximar do parágrafo */
+    margin: 0 0 0 0;
+    /* Reduz a margem inferior para aproximar do parágrafo */
 }
 
 .contato p {
-    color: #eaeaea;
     justify-content: center;
     text-align: center;
-    display: flex;
-    margin-top: 0px; /* Remove a margem superior para aproximar do título */
+    margin: 0 0 0 0;
+    /* Remove a margem superior para aproximar do título */
 }
 
+.email {
+    transition: 1s;
+    cursor: pointer;
+}
 
-.linktree{
+.email a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+.email:hover {
+    transform: scale(1.1);
+    background-color: #2e2e2e;
+    border-radius: 30px;
+}
+
+.telefone {
+    transition: 1s;
+    cursor: pointer;
+}
+
+.telefone a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+.telefone:hover {
+    transform: scale(1.1);
+    background-color: #2e2e2e;
+    border-radius: 30px;
+}
+
+.linkedin {
+    transition: 1s;
+    cursor: pointer;
+}
+
+.linkedin a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+.linkedin:hover {
+    transform: scale(1.1);
+    background-color: #2e2e2e;
+    border-radius: 30px;
+}
+
+.linktree {
     width: 280px;
     justify-content: center;
     align-items: center;
@@ -72,21 +124,21 @@ body {
     transition: transform 1s;
 }
 
-.linktree:hover{
+.linktree:hover {
     transform: scale(1.05);
 }
 
-.img-h0wzy{
+.img-h0wzy {
     display: flex;
     width: 500px;
     border-radius: 15px;
     transition: transform 1s;
-    
+
 }
 
-.img-h0wzy:hover{
+.img-h0wzy:hover {
     transform: scale(1.1);
-    
+
 }
 
 
@@ -97,14 +149,14 @@ body {
     position: absolute;
     top: 1860px;
     right: 20px;
-    transition: transform 1s;
+    transition: 1s;
+    padding: 10px 10px 10px 10px;
 }
 
 .return:hover {
-    transition: .5s;
-    color: #ececec;
-    background-color: #121212;
-    border-radius: 10px;
-    transform: scale(1.03);
+    color: #eaeaea;
+    background-color: #2e2e2e;
+    border-radius: 30px;
+    transform: scale(1.06);
+    transform: translateY(-10px);
 }
-
