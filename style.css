@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,800&display=swap');
 
 * {
-    /* margin: 0 auto; */
     padding: 3px;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -16,6 +15,51 @@ body {
     height: 100vh;
 }
 
+.header {
+    background-color: #121212;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    color: #eaeaea;
+    text-decoration: none;
+    transition: .4s;
+}
+.logo:hover {
+    transform: scale(1.06);
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #eaeaea;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #eaeaea;
+    transition: .5s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
 
 .montserrat-bold {
     font-family: "Montserrat", sans-serif;
@@ -29,6 +73,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    margin-top: 5rem;
 }
 
 .center-text {
@@ -50,6 +95,7 @@ body {
     /* Centraliza o texto */
     flex-direction: column;
     /* Alinha os itens em coluna */
+    margin-top: 3rem;
 }
 
 

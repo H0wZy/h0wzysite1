@@ -6,34 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATIVIDADE 01 - HTML BÁSICO</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <div class="container-fluid" id="topo">
-        <h1 class="montserrat-bold">Olá, Seja bem vindo ao site do Marcos "H0wZy" Junior.</h1>
-        <br>
 
-        <a href="#contato"><img class="img-h0wzy" src="img/euatual.jpeg" alt="Marcos 'H0wZy' Junior"></a>
-        <br>
-        <h3 class="montserrat-bold">Sobre mim</h3>
+        <header class="header">
+            <a href="#" class="logo montserrat-bold"><i class="bi bi-house-door-fill"></i></a>
+
+            <nav class="navbar">
+                <a href="#sobre">Sobre</a>
+                <a href="#interesses">Interesses</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="http://www.linktr.ee/h0wzy" target="_blank" rel="noopener noreferrer">Redes sociais</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+
+        <h1 class="montserrat-bold">Olá, Seja bem vindo ao site do Marcos "H0wZy" Junior.</h1>
+
+        <a href="#contato"><img class="img-h0wzy" id="sobre" src="img/euatual.jpeg" alt="Marcos 'H0wZy' Junior"></a>
+
+        <h3 class="montserrat-bold" id="interesses">Sobre mim</h3>
         <p class="center-text">Me chamo Marcos Junior Bueno Selzler, meu nickname online é "H0wZy" com a pronúncia de:
             "ráuzi".<br>Sou um estudante de programação e pretendo ser programador futuramente!<br>
             As vezes faço lives também, confira meu trabalho no Linktree!</p>
-        <br>
-        <h3 class="montserrat-bold">Meus Interesses</h3>
-        <ol>
+
+        <h3 class="montserrat-bold" id="habilidades">Meus Interesses</h3>
+        <ul>
             <li>Tecnologia</li>
             <li>Filmes</li>
             <li>Séries</li>
             <li>Músicas</li>
             <li>Jogos</li>
             <li>Cultora Pop/Geek</li>
-        </ol>
-        <br>
-        <h3 class="montserrat-bold">Minhas habilidades</h3>
+        </ul>
+
+        <h3 class="montserrat-bold" id="redes">Minhas habilidades</h3>
         <ul>
             <li>Rápido aprendizado</li>
             <li>Boa comunicação</li>
@@ -41,13 +54,11 @@
             <li>Alto empenho</li>
             <li>Flexivel</li>
         </ul>
-        <br>
+
         <h3 class="montserrat-bold">Redes sociais<a class="linktree" href="https://linktr.ee/h0wzy" target="_blank"
                 rel="noopener noreferrer">
         </h3><img class="linktree" src="img/linktree.png" alt=""></a>
-        <br>
 
-        <br>
 
         <div class="contato" id="contato">
             <h3 class="montserrat-bold">Contato:</h3>
@@ -66,10 +77,9 @@
 
         </div>
         <div class="container-return">
-            <a href="#topo" class="return">Retornar ao topo ▲</a>
+            <a href="#" class="return">Retornar ao topo ▲</a>
         </div>
     </div>
-
 
     <script src="script.js"></script>
 </body>
