@@ -141,14 +141,15 @@ body {
 
 }
 
+.container-return {
+    display: flex;
+    justify-content: end;
+    margin: -13rem -50rem 0 50rem;
+}
 
 .return {
     text-decoration: none;
     color: #121212;
-    display: flex;
-    position: absolute;
-    top: 1860px;
-    right: 20px;
     transition: 1s;
     padding: 10px 10px 10px 10px;
 }
